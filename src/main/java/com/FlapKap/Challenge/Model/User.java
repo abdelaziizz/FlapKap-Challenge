@@ -3,26 +3,26 @@ package com.FlapKap.Challenge.Model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Users")
-public class User{
+@Table(name = "Users")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name="username")
+    @Column(name = "username")
     private String username;
 
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
 
-    @Column(name="deposit")
+    @Column(name = "deposit")
     private float deposit;
 
-    @Column(name="role")
+    @Column(name = "role")
     private String role;
 
-    public User () {
+    public User() {
 
     }
 

@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "76f20495-d8df-4597-899f-8bfba3d95260",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/userApi/createUser?username=username2&password=password&deposit=500&role=seller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userApi",
+						"createUser"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "username2"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						},
+						{
+							"key": "deposit",
+							"value": "500"
+						},
+						{
+							"key": "role",
+							"value": "seller"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productApi/getProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productApi",
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/userApi/getUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userApi",
+						"getUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/userApi/deleteUser/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userApi",
+						"deleteUser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/userApi/updateUser/1?username=Abdelaziz&password=pa&deposit=200.0&role=buyer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userApi",
+						"updateUser",
+						"1"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Abdelaziz"
+						},
+						{
+							"key": "password",
+							"value": "pa"
+						},
+						{
+							"key": "deposit",
+							"value": "200.0"
+						},
+						{
+							"key": "role",
+							"value": "buyer"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productApi/createProduct/username2/password?amountAvailable=10&cost=5&productName=Pepsi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productApi",
+						"createProduct",
+						"username2",
+						"password"
+					],
+					"query": [
+						{
+							"key": "amountAvailable",
+							"value": "10"
+						},
+						{
+							"key": "cost",
+							"value": "5"
+						},
+						{
+							"key": "productName",
+							"value": "Pepsi"
+						},
+						{
+							"key": "sellerId",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productApi/updateProduct/4?amountAvailable=15.0&cost=20.0&productName=Fanta&username=username2&password=password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productApi",
+						"updateProduct",
+						"4"
+					],
+					"query": [
+						{
+							"key": "amountAvailable",
+							"value": "15.0"
+						},
+						{
+							"key": "cost",
+							"value": "20.0"
+						},
+						{
+							"key": "productName",
+							"value": "Fanta"
+						},
+						{
+							"key": "username",
+							"value": "username2"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productApi/deleteProduct/2?username=username2&password=password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productApi",
+						"deleteProduct",
+						"2"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "username2"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/operationApi/deposit?username=username&password=password&amount=100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"operationApi",
+						"deposit"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "username"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						},
+						{
+							"key": "amount",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Deposit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/operationApi/resetDeposit?username=username&password=password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"operationApi",
+						"resetDeposit"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "username"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/operationApi/buy?username=username&password=password&productName=Pepsi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"operationApi",
+						"buy"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "username"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						},
+						{
+							"key": "productName",
+							"value": "Pepsi"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
